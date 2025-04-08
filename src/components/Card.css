@@ -1,0 +1,148 @@
+body {
+  background-color: #e6f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.user-icon {
+  width: 60px;
+  height: 60px;
+  align-self: center; 
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%; 
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%; 
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #000;
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+
+.btn {
+  width: 120px;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.erro {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 450px) {
+  .card {
+      width: 85%;
+      padding: 20px;
+      text-align: left;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 85%; 
+  }
+
+  label {
+      text-align: left;
+      width: 100%;
+      margin-bottom: 5px;
+  }
+
+  input {
+      width: 100%;
+  }
+
+  .btn {
+      width: 100px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+      width: 70%;
+  }
+
+  input {
+      width: 90%;
+  }
+}
